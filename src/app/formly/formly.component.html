@@ -1,0 +1,34 @@
+<h2>ngx-formly</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <formly-form
+    [form]="form"
+    [fields]="fields"
+    [model]="model"
+    [options]="options">
+  </formly-form>
+
+  <div fxLayout="row" fxLayoutGap="8px">
+    <button mat-raised-button
+      color="primary"
+      [disabled]="form.invalid"
+      type="submit">
+      {{ 'submit.button' | translate }}
+    </button>
+
+    <button mat-raised-button
+      color="accent"
+      (click)="prefill()"
+      type="button">
+      {{ 'prefill.button' | translate }}
+    </button>
+
+    <button mat-raised-button
+      (click)="reset()"
+      type="button">
+      {{ 'reset.button' | translate }}
+    </button>
+  </div>
+</form>
+
+<pre *ngIf="submitted">{{ submitted | json }}</pre>

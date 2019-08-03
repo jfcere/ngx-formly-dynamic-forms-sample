@@ -1,0 +1,9 @@
+formly-form {
+  ::ng-deep formly-field {
+    display: block;
+  }
+
+  ::ng-deep .mat-radio-button:not(:last-of-type) {
+    padding-right: 1em;
+  }
+}

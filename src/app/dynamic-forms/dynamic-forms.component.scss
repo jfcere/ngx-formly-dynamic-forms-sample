@@ -1,0 +1,39 @@
+
+dynamic-material-form {
+  ::ng-deep {
+    .mat-form-field {
+      width: 100%;
+    }
+
+    .ng-dynamic-forms-radio_group {
+      label:not(.mat-radio-label) {
+        color: rgba(0,0,0,0.54);
+        font-size: 0.75em;
+      }
+    }
+
+    .mat-checkbox {
+      border-top: .84375em solid transparent;
+      padding: .4375em 0 1.25em;
+    }
+
+    .mat-radio-group {
+      display: block;
+      padding-bottom: 1.25em;
+      margin-top: 4px;
+
+      .mat-radio-button:not(:last-of-type) {
+        padding-right: 1em;
+      }
+    }
+
+    .mat-slide-toggle {
+      border-top: .84375em solid transparent;
+      padding: .4375em 0 1.25em;
+    }
+
+    dynamic-material-form-control {
+      display: block;
+    }
+  }
+}

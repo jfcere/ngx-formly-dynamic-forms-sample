@@ -1,0 +1,59 @@
+{
+  "birth-date": {
+    "label": "Birth Date",
+    "placeholder": "Select birth date"
+  },
+  "comment": {
+    "description": "200 characters maximum",
+    "label": "Comment",
+    "placeholder": "Enter comment"
+  },
+  "email-address": {
+    "label": "Email Address",
+    "placeholder": "Enter email",
+    "validation": {
+      "pattern": "Please enter a valid email (example@domain.com)"
+    }
+  },
+  "favorite-color": {
+    "label": "Favorite Color",
+    "placeholder": "Select a color"
+  },
+  "favorite-fruits": {
+    "label": "Favorite Fruits",
+    "placeholder": "Select favorite fruits",
+    "select-all-option": "Select All"
+  },
+  "first-name": {
+    "label": "First Name",
+    "placeholder": "Enter first name"
+  },
+  "gender": {
+    "label": "Gender",
+    "placeholder": "Select gender"
+  },
+  "last-name": {
+    "label": "Last Name",
+    "placeholder": "Enter last name"
+  },
+  "newsletter": {
+    "description": "You will receive newsletters about new fonctionalities, events and promotions",
+    "label": "Keep me informed about the product"
+  },
+  "prefill": {
+    "button": "Prefill"
+  },
+  "reset": {
+    "button": "Reset"
+  },
+  "submit": {
+    "button": "Submit"
+  },
+  "terms": {
+    "label": "I Accept Legal Terms",
+    "description": "In order to proceed, please accept terms",
+    "validation": {
+      "pattern": "You must accept the terms to continue"
+    }
+  }
+}

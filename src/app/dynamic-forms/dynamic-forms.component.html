@@ -1,0 +1,33 @@
+<h2>ng-dynamic-forms</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <dynamic-material-form
+    [layout]="layout"
+    [group]="form"
+    [model]="model">
+  </dynamic-material-form>
+
+  <div fxLayout="row" fxLayoutGap="8px">
+    <button mat-raised-button
+      color="primary"
+      [disabled]="form.invalid"
+      type="submit">
+      {{ 'submit.button' | translate }}
+    </button>
+
+    <button mat-raised-button
+      color="accent"
+      (click)="prefill()"
+      type="button">
+      {{ 'prefill.button' | translate }}
+    </button>
+
+    <button mat-raised-button
+      (click)="reset()"
+      type="button">
+      {{ 'reset.button' | translate }}
+    </button>
+  </div>
+</form>
+
+<pre *ngIf="submitted">{{ submitted | json }}</pre>
