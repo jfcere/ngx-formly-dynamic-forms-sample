@@ -10,7 +10,7 @@ export class Example {
   newsletter: boolean;
   newsletterEmail: string;
 
-  static get empty(): Example {
+  static get initialValues(): Example {
     return {
       firstName: '',
       lastName: '',

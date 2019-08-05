@@ -1,4 +1,3 @@
-
 dynamic-material-form {
   ::ng-deep {
     .mat-form-field {
@@ -15,6 +14,12 @@ dynamic-material-form {
     .mat-checkbox {
       border-top: .84375em solid transparent;
       padding: .4375em 0 1.25em;
+    }
+
+    .newsletter-hint {
+      font-size: 75%;
+      position: relative;
+      top: -1em;
     }
 
     .mat-radio-group {

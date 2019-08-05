@@ -11,6 +11,7 @@ import {
 
 import { Example, exampleFormLayout, exampleFormModel } from './models';
 
+
 @Component({
   selector: 'app-dynamic-forms',
   templateUrl: './dynamic-forms.component.html',
@@ -51,7 +52,7 @@ export class DynamicFormsComponent implements OnInit {
   }
 
   reset() {
-    this.updateFormValues<Example>(Example.empty, this.model);
+    this.updateFormValues<Example>(Example.initialValues, this.model);
     this.submitted = null;
   }
 

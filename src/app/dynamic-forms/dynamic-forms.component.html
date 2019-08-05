@@ -5,6 +5,11 @@
     [layout]="layout"
     [group]="form"
     [model]="model">
+
+    <ng-template modelId="newsletter">
+      <div class="newsletter-hint">{{ 'newsletter.description' | translate }}</div>
+    </ng-template>
+
   </dynamic-material-form>
 
   <div fxLayout="row" fxLayoutGap="8px">

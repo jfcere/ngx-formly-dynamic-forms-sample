@@ -13,7 +13,7 @@ export class FormlyComponent {
 
   fields = exampleFields;
   form = new FormGroup({});
-  model = Example.empty;
+  model = Example.initialValues;
   options: FormlyFormOptions = {};
   submitted = null;
 
@@ -37,7 +37,7 @@ export class FormlyComponent {
   }
 
   reset() {
-    this.options.resetModel(Example.empty);
+    this.options.resetModel(Example.initialValues);
     this.submitted = null;
   }
 

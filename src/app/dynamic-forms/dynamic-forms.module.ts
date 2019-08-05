@@ -12,7 +12,7 @@ import { DynamicFormsComponent } from './dynamic-forms.component';
 @NgModule({
   imports: [
     CommonModule,
-    DynamicFormsCoreModule,
+    DynamicFormsCoreModule.forRoot(),
     DynamicFormsMaterialUIModule,
     FlexLayoutModule,
     ReactiveFormsModule,

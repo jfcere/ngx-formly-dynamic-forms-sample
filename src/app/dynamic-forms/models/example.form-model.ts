@@ -149,7 +149,7 @@ export const exampleFormModel: DynamicFormModel = [
 
   new DynamicSwitchModel({
     id: 'newsletter',
-    hint: 'You will receive newsletters about new fonctionalities, events and promotions',
+    hint: 'You will receive newsletters about new functionalities, events and promotions',
     offLabel: 'Keep me informed about the product',
     onLabel: 'Keep me informed about the product',
   }),
@@ -177,7 +177,6 @@ export const exampleFormModel: DynamicFormModel = [
           },
         ],
       },
-
     ],
     validators: {
       pattern: emailRegexp,
