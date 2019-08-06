@@ -39,6 +39,10 @@ dynamic-material-form {
 
     dynamic-material-form-control {
       display: block;
+
+      &[hidden] {
+        display: none;
+      }
     }
   }
 }

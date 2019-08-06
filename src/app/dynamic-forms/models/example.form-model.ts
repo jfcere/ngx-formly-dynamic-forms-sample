@@ -8,7 +8,9 @@ import {
   DynamicSwitchModel,
   DynamicTextAreaModel,
   MATCH_DISABLED,
+  MATCH_HIDDEN,
   MATCH_REQUIRED,
+  OR_OPERATOR,
 } from '@ng-dynamic-forms/core';
 
 import { emailRegexp } from '@shared/regexp';
@@ -161,6 +163,7 @@ export const exampleFormModel: DynamicFormModel = [
     relations: [
       {
         match: MATCH_REQUIRED,
+        operator: OR_OPERATOR,
         when: [
           {
             id: 'newsletter',
@@ -169,7 +172,16 @@ export const exampleFormModel: DynamicFormModel = [
         ],
       },
       {
-        match: MATCH_DISABLED, // MATCH_HIDDEN doesn't work has per v8.1.1
+        match: MATCH_DISABLED,
+        when: [
+          {
+            id: 'newsletter',
+            value: false,
+          },
+        ],
+      },
+      {
+        match: MATCH_HIDDEN,
         when: [
           {
             id: 'newsletter',
